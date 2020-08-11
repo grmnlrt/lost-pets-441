@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>All pets</h1>
+
+      <ul>
+        <% @pets.each do |pet| %>
+          <li><%= pet.name %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

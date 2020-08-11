@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1><%= @pet.name %></h1>
+
+      <ul>
+        <li>Address: <strong><%= @pet.address %></strong></li>
+        <li>Species: <strong><%= @pet.species %></strong></li>
+        <li>Found on <strong><%= @pet.found_on %></strong></li>
+      </ul>
+
+      <%= link_to "Delete #{@pet.name}", pet_path(@pet), method: :delete, data: { confirm: "Are you sure?"} %>
+    </div>
+  </div>
+</div>
